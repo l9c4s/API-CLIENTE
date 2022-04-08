@@ -31,8 +31,8 @@ namespace WebApplication1
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApplication1", Version = "v1" });
             });
             services.AddDbContext<AppContext>(options => options.UseSqlServer(
-                "Data Source=DESKTOP-I6MEIB6\\SQLEXPRESS;Initial Catalog=API_CLI;Persist Security Info=True;User ID=projeto;Password=12345678"));
-        }
+           "Data Source=DESKTOP-I6MEIB6\\SQLEXPRESS;Initial Catalog=API_CLI;Persist Security Info=True;User ID=projeto;Password=12345678"));
+            }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
