@@ -5,8 +5,8 @@ namespace WebApplication1.Repositories
 {
     public class TransferRepository : ITransferRepository
     {
-        public readonly TransferenciaContext _context;
-        public TransferRepository(TransferenciaContext context)
+        public readonly AppContext _context;
+        public TransferRepository(AppContext context)
         {
             _context = context;
         }

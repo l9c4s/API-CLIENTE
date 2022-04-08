@@ -8,8 +8,8 @@ namespace WebApplication1.Repositories
  
     public class ClienteRepository : IClienteRepository
     {
-        public readonly ClienteContext _context;
-        public ClienteRepository(ClienteContext context)
+        public readonly AppContext _context;
+        public ClienteRepository(AppContext context)
         {
             _context = context;
         }

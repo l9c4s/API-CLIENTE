@@ -2,12 +2,13 @@
 
 namespace WebApplication1.Models
 {
-    public class ClienteContext : DbContext
+    public class AppContext : DbContext
     {
-        public ClienteContext(DbContextOptions<ClienteContext> options) : base(options)
+        public AppContext(DbContextOptions<AppContext> options) : base(options)
         {
             Database.EnsureCreated();
         }
         public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Transferencia> Transferencias { get; set; }       
     }
 }
