@@ -35,7 +35,7 @@ namespace WebApplication1.Controllers
         public async Task<ActionResult<Cliente>> PosTCli(Cliente cliente)
         {
             var newcli = await _ClienterRepository.CreateCli(cliente);
-            return CreatedAtAction(nameof(GetCli), new{ id = newcli.Documento }, newcli);          
+            return CreatedAtAction(nameof(GetCli), new{ id = newcli.Id }, newcli);          
         }
     }
 }

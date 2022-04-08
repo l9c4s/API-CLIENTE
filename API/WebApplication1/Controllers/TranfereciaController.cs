@@ -29,7 +29,7 @@ namespace WebApplication1.Controllers
         {
 
             var newtranf = await _TransferenciaRepository.Transfer(Transferencia);
-            return CreatedAtAction(nameof(GetTranf), new { id = newtranf.id }, newtranf);
+            return CreatedAtAction(nameof(GetTranf), new { id = newtranf }, newtranf);
         }
     }
 }
