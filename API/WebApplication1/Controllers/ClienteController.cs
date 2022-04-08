@@ -16,14 +16,6 @@ namespace WebApplication1.Controllers
         {
             _ClienterRepository = clienteRepository;
         }
-
-        //request list all cliente 
-        [HttpGet]
-        public async Task<IEnumerable<Cliente>> GetAllCli()
-        {
-            return await _ClienterRepository.GetAllCli();
-        }
-
         // Request cliente by Documento
         [HttpGet("{Documento}")]
         public async Task<ActionResult<Cliente>> GetCli(int Documento)
@@ -35,7 +27,7 @@ namespace WebApplication1.Controllers
         public async Task<ActionResult<Cliente>> PosTCli(Cliente cliente)
         {
             var newcli = await _ClienterRepository.CreateCli(cliente);
-            return CreatedAtAction(nameof(GetCli), new{ id = newcli.Id }, newcli);          
+            return CreatedAtAction(nameof(GetCli), new{ id = newcli }, newcli);          
         }
     }
 }

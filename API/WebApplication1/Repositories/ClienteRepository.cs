@@ -13,20 +13,14 @@ namespace WebApplication1.Repositories
         {
             _context = context;
         }
-
-        //Function list all cliente
-        public async Task<IEnumerable<Cliente>> GetAllCli()
-        {
-            return await _context.Clientes.ToListAsync();
-        }
-
         //Function Create Cliente
-        public async Task<Cliente> CreateCli(Cliente cliente)
+        public async Task<string> CreateCli(Cliente cliente)
         {
            _context.Clientes.Add(cliente);
             await _context.SaveChangesAsync();
 
-            return cliente;
+
+            return "Cliente cadastrado com sucesso";
         }
 
         //Function search Cliente by Documento
