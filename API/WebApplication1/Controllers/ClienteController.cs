@@ -16,18 +16,25 @@ namespace WebApplication1.Controllers
         {
             _ClienterRepository = clienteRepository;
         }
+
+
+        
+
         // Request cliente by Documento
-        [HttpGet("{Documento}")]
-        public async Task<ActionResult<Cliente>> GetCli(int Documento)
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Cliente>> GetCli(int id)
         {
-            return await _ClienterRepository.GetCli(Documento);
+            return await _ClienterRepository.Get(id);
         }
+
+
+
         // Post new cliente
         [HttpPost]
         public async Task<ActionResult<Cliente>> PosTCli(Cliente cliente)
         {
-            var newcli = await _ClienterRepository.CreateCli(cliente);
-            return CreatedAtAction(nameof(GetCli), new{ id = newcli }, newcli);          
+            await _ClienterRepository.CreateCli(cliente);
+            return cliente;       
         }
     }
 }

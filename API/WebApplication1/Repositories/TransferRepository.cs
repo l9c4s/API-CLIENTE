@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using WebApplication1.Models;
 

@@ -10,12 +10,10 @@ namespace WebApplication1.Controllers
     public class TranfereciaController : ControllerBase
     {
         private readonly ITransferRepository _TransferenciaRepository;
-        private readonly IClienteRepository _ClienterRepository1;
 
         public TranfereciaController(ITransferRepository transferencia, IClienteRepository _ClienterRepository)
         {
             _TransferenciaRepository = transferencia;
-            _ClienterRepository1 = _ClienterRepository;
         }
 
         [HttpGet("{ID}")]
