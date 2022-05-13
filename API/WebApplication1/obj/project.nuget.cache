@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9xb6XVQRoBqTWSoykyOLqYA3CO5a4sXZb6uLlMiEbCiCHYgo0xjqzrYJ1X4AsD2gDDJcnZZBRIAfvqfHSysEZw==",
+  "dgSpecHash": "gVi8rJQ/5KmcPX+Myy64l/tUOqvv/ezK7RhBvpy5njQyK78xbniuGcphastCariomFqBskWoXwi1bZqCXQu0fw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lucas\\Desktop\\API\\API\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
@@ -103,7 +103,8 @@
     "C:\\Users\\Lucas\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Lucas\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\Lucas\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],
   "logs": []
 }

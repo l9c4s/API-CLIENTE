@@ -17,17 +17,12 @@ namespace WebApplication1.Controllers
             _ClienterRepository = clienteRepository;
         }
 
-
-        
-
         // Request cliente by Documento
         [HttpGet("{id}")]
         public async Task<ActionResult<Cliente>> GetCli(int id)
         {
             return await _ClienterRepository.Get(id);
         }
-
-
 
         // Post new cliente
         [HttpPost]
